@@ -8,13 +8,7 @@ const Header = props => {
   const toSwitch = language === 'fi' ? 'en' : 'fi';
   return (
     <div className={styles.Header}>
-      <div className={styles.title}>{t('title')}</div>
-      <div
-        className={styles.languageSwitcher}
-        onClick={() => i18n.changeLanguage(toSwitch)}
-      >
-        {toSwitch.toUpperCase()}
-      </div>
+      <div className={styles.title}>Train Information</div>
     </div>
   );
 };
